@@ -19,7 +19,7 @@ public class Main {
         System.out.println("---------------------------------------------------------------");
         System.out.println("|                         RESULTADO                           |");
         System.out.println("---------------------------------------------------------------");
-        System.out.println("El voltaje a aplicar cuando e = " + nro1 + " mts. y 'e = " + nro2 + " m/s, es de V = " + resultadoVoltaje + " voltios.");
+        System.out.println("El voltaje a aplicar cuando e = " + entrada[0] + " mts. y 'e = " + entrada[1] + " m/s, es de V = " + resultadoVoltaje + " voltios.");
         System.out.println();
     }
 
@@ -43,11 +43,11 @@ public class Main {
         System.out.println("---------------------------------------------------------------");
         System.out.println("Primero, defina el valor de la distancia...");
         while(!esValido) {
-            System.out.println("Ingrese distancia e (entre -0.5 y +0.5): ");
+            System.out.println("Ingrese distancia e (entre -0,5 y +0,5): ");
             try {
                 datos[0] = lect.nextFloat();
                 if(datos[0] <= 0.5f && datos[0] >= -0.5f) esValido = true;
-                else System.out.println("Valor invalido! (debe estar entre -0.5 y +0.5)");
+                else System.out.println("Valor invalido! (debe estar entre -0,5 y +0,5)");
             } catch(Exception e) {
                 lect.next();
                 System.out.println("Valor invalido!");
@@ -58,11 +58,11 @@ public class Main {
         esValido = false;
         System.out.println("Ahora, defina el valor de la velocidad...");
         while(!esValido) {
-            System.out.println("Ingrese velocidad 'e (entre -4.0 y +4.0): ");
+            System.out.println("Ingrese velocidad 'e (entre -4,0 y +4,0): ");
             try{
                 datos[1] = lect.nextFloat();
                 if(datos[1] <= 4.0f && datos[1] >= -4.0f) esValido = true;
-                else System.out.println("Valor invalido! (debe estar entre -4.0 y +4.0)");
+                else System.out.println("Valor invalido! (debe estar entre -4,0 y +4,0)");
             } catch (Exception e) {
                 lect.next();
                 System.out.println("Valor invalido!");
