@@ -1,5 +1,5 @@
 # Matematica Aplicada
- tarea de matematica aplicada
+ Tarea de matematica aplicada
 
 ## Requerimientos
 - AAA (to do)
@@ -23,10 +23,11 @@ java -classpath .\bin\ Main
 
 #### Para compilar
 ```
-To Do
+cd src/
+javac *.java
 ```
 
 #### Para ejecutar
 ```
-To Do
+java Main
 ```
