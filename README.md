@@ -1,9 +1,8 @@
 # Matematica Aplicada
- Tarea de matematica aplicada
+ Tarea de Matematica Aplicada
 
 ## Requerimientos
-- AAA (to do)
-- BBB (to do)
+- Tener instalado java JDK (o Open JDK para ubuntu), versión 17 en adelante.
 
 ## Como usar el programa
 
@@ -23,11 +22,10 @@ java -classpath .\bin\ Main
 
 #### Para compilar
 ```
-cd src/
-javac *.java
+javac -d ./bin/ ./src/*.java
 ```
 
 #### Para ejecutar
 ```
-java Main
+java -classpath ./bin/ Main
 ```
